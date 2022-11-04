@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: teal;
 }
 
 header {
@@ -25,13 +25,5 @@ footer {
     color: #fff;
     margin: 0%;
 }
-.home-banner-content {
-    width: 100%;
-    position: static;
-    top: 0px;
-    background: linear-gradient(to right, #00093c, #2d0b00);
-    color: #fff;
-    padding: 10px  3px;
-    border-radius: 0px 0px 100px 100px;
-    }
+
 
