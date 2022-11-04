@@ -26,4 +26,22 @@ footer {
     margin: 0%;
 }
 
+.icons {
+    display: inline;
+}
+
+
+
+.one {
+    background-color: teal;
+    border: 0;
+    color: white;
+    padding: 30px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.one:hover {
+    background-color: #006080;
+}
 
