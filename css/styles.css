@@ -39,20 +39,14 @@ nav ul li a {
     height: 300px;
 }
 
-.one {
+.icons {
     background-color: teal;
-    border: 0;
-    color: white;
-    padding: 30px 30px;
-    font-size: 20px;
-    cursor: pointer;
+    border-radius: 195px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.one:hover {
-    background-color: #006080;
-}
-
-.logo-test {
-    height: 65px;
-    width: 197px;
+p.f-one {
+    background-color: aqua;
 }
