@@ -1,36 +1,43 @@
 body {
-    background-color: teal;
+    background-color: #E6E6E6;
 }
-
-header {
-    display: flex;
+.navbar {
     align-items: center;
+    display: flex;
+    height: 12%;
 }
-  
+
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+
+.menu_icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
 nav {
-    margin-left: 25px;
-}
-  
-nav ul {
-    padding: 0px;
-}
-  
-nav li {
-    display: inline-block;
-}  
-
-header, 
-footer {
-    background-color: black;
-    color: #fff;
-    margin: 0%;
+    flex: 1;
+    text-align: right;
 }
 
-.icons {
+nav ul li {
+    list-style: none;
     display: inline;
+    margin-left: 60px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
 
+.hero {
+    height: 300px;
+}
 
 .one {
     background-color: teal;
@@ -45,3 +52,7 @@ footer {
     background-color: #006080;
 }
 
+.logo-test {
+    height: 65px;
+    width: 197px;
+}
