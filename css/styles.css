@@ -12,12 +12,13 @@ body {
 .logo{
     width: 90px;
     cursor: pointer;
+    margin-left: 50px;
 }
 
 .menu_icon {
     width: 30px;
     cursor: pointer;
-    margin-left: 40px;
+    margin-left: 100px;
 }
 
 nav {
@@ -63,31 +64,37 @@ nav ul li a {
     text-align: center;
 }
 
+.homepage-raincoat {
+    display: flex;
+    justify-content: center;
 
+}
 
+.FP-img:hover {
+    transform: translateY(-30px);
+    transition: 0.7s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.home-info-2 p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
 
 .icons {
-    background-color: teal;
-    border-radius: 195px;
+    background-color: #1c4c55;
+    border-radius: 15px;
     padding: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
+.icons p {
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+}
