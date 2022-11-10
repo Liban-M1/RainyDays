@@ -189,6 +189,21 @@ form {
 
 /* COLLECTION.HTML */
 
+.top-h1 {
+    margin-left: 225px;
+}
+
+.collection-grid {
+    display: inline-flex;
+    margin-left: 170px;
+}
+
+.collection-row {
+    margin-top: 180px;
+    margin-left: 135px;
+    margin-bottom: 100px;
+}
+
 .collection-row img {
     height: 300px;
     width: auto;
@@ -197,10 +212,15 @@ form {
 .left-side img {
     height: 400px;
     width: auto;
+    margin-top: 125px;
+    margin-bottom: 80px;
 }
 
-.left-side, .collection-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
+.pro1 {
+    margin-right: 50px;
+}
+
+.pro1:hover {
+    transform: translateY(-30px);
+    transition: 0.7s;
 }
