@@ -224,3 +224,72 @@ form {
     transform: translateY(-30px);
     transition: 0.7s;
 }
+
+/* PRODUCT.HTML */
+
+.product-description, h1, h2, p {
+    display: flex;
+    justify-content: center;
+}
+
+.product-description h1 {
+    font-size: 50px;
+}
+
+.product-description h2 {
+    font-size: 30px;
+}
+
+.product-description p {
+    font-size: 30px;
+}
+
+.product-picture {
+    display: flex;
+    justify-content: center;
+}
+
+.product-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+ /*
+.size-btn:target {
+    background-color: #82dbdb;
+    height: 60px;
+    width: 60px;
+}
+*/
+
+.size-btn {
+    height: 50px;
+    width: 50px;
+    background-color: #8dc4c4;
+    font-size: 20px;
+}
+
+.checkout-btn {
+    height: 50px;
+    width: 150px;
+    background-color: #489595;
+    font-size: 20px;
+}
+
+/*CHECKOUT.HTML*/
+
+.checkout-pt1 {
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-pt1 p {
+    height: 385px;
+    width: 750px;
+    background-color: teal;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 5px;
+}
