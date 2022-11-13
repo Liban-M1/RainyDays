@@ -313,9 +313,7 @@ form {
 /* MEDIA */
 
 @media (min-width: 250px) {
-    body {
-        color: darkviolet;
-    }
+
 
     .navbar  ul{
         display: none;
@@ -375,9 +373,7 @@ form {
 }
 
 @media (min-width: 700px) {
-    body {
-        color: blue;
-    }
+
 
     .navbar  ul{
         display: block;
@@ -418,9 +414,7 @@ form {
 } 
 
 @media (min-width: 1025px) {
-    body {
-        color: red;
-    }
+
 
     .navbar  ul{
         display: block;
@@ -472,9 +466,7 @@ form {
 } 
 
 @media (min-width: 1200px) {
-    body {
-        color: green;
-    }
+
 
     .hero {
         height: 450px;
