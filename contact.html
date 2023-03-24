@@ -24,6 +24,47 @@
         <div class="c-u">
             <h1>Contact Us</h1>
         </div>
+        <main>
+            <form class="form-container" name="contactForm" id="contactForm">
+                <div>
+                    <label>
+                        First Name 
+                        <input type="text" name="firstName" id="firstName">
+                    </label>
+                    <div class="form-error" id="nameError">
+                        Please enter your name
+                    </div>
+                </div>
+                <div>
+                    <label>
+                        Subject (minimum 10 characters)
+                        <input type="text" name="subject" id="subject">
+                    </label>
+                    <div class="form-error" id="subjectError">
+                        Please enter the subject
+                    </div>
+                </div>
+                <div>
+                    <label>
+                        Email 
+                        <input type="text" name="email" id="email">
+                    </label>
+                    <div class="form-error" id="emailError">
+                        Please enter your email
+                    </div>
+                </div>
+                <div>
+                    <label>
+                        Address (minimum 25 characters)
+                        <input type="text" name="address" id="address">
+                    </label>
+                    <div class="form-error" id="addressError">
+                        Please enter your address
+                    </div>
+                </div>
+                <button class="contactbtn" id="btn" type="submit">Submit</button>
+            </form>
+        </main>
         <div class="phone-cu">
             <p>Have questions? Shoot us an Email.
                 tlf: 47+ 22044066
@@ -39,18 +80,8 @@
             <P>A local group of strangers dissatisfied with how the climate can limit their time outdoors. where we come from we have a saying, "bad weather doesn`t exist only bad clothes".  well, we had jackets that could hold us warm but not durable and functional ones for active movement. We threw away our big jackets and started working on a better experience for those who love to spend their time outdoors. And the rest is history</P>
         </div>
     </section>
-    <section class="contact-us">
-        <div class="contact-box">
-            <p>Fill out this form to contact us</p>
-            <form>  
-                <input type="text" class="input-field" placeholder="Your Name">
-                <input type="text" class="input-field" placeholder="Your Email">
-                <input type="text" class="input-field" placeholder="Your Number">
-                <textarea type="text" class="input-field i-f-txt" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn-us">Send Message</button>
-            </form>
-        </div>
-    </section>
+
+    <script src="/js/contact.js"></script>
     <footer>
         <div>
             <a href="contact.html"><div class="icons">

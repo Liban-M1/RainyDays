@@ -1,0 +1,58 @@
+/* Contact form */
+
+.phone-cu {
+    display: none;
+    font-size: 25px;
+}
+
+.contact-box {
+    background-color: rgb(0, 128, 128);
+    box-shadow: 0 0 25px 0 #999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 550px;
+    border-radius: 20px;
+}
+
+form {
+    margin: 50px;
+}
+
+.input-field {
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px #777;
+    border-radius: 20px;
+    outline: none;
+}
+
+.i-f-txt {
+    height: 100px;
+    padding: 15px;
+}
+
+.btn-us {
+    border-radius: 20px;
+    color: #ffff;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1c4c55;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-box P {
+    display: flex;
+    margin-left: 65px;
+    margin-bottom: -50px;
+    font-size: 25px;
+    color: white;
+}
+
+/* Contact Form */
