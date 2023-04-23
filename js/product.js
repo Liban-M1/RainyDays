@@ -12,11 +12,11 @@ function fetchProduct(productId) {
     if (!productId) {
       return Promise.reject(new Error('Product id is required'));
     }
-    const endpoint = `${productsEndpoint}/${productId}`;
+    const endpoint = `https://www.cdr2b.pro/wp-json/wc/v3/products/${productId}?consumer_key=ck_47b5900d801d14f4fcfcceb798694c9048fe1d47&consumer_secret=cs_c33b95cf393ff20ac87ab76fe533b2fa3071f016`;
     return fetch(endpoint)
       .then(response => response.json())
       .catch(error => console.error(error));
-}
+  }
   
 
 // Render a grid of product data as thumbnails
@@ -34,8 +34,6 @@ function renderProducts(products) {
       productsContainer.appendChild(productElement);
     });
   }
-
-  
 
 // Filter Featured products and show in their own section
 function renderFeaturedProducts(products) {
