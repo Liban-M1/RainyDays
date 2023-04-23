@@ -1,13 +1,13 @@
 const productsEndpoint = 'https://www.cdr2b.pro/wp-json/wc/v3/products?consumer_key=ck_47b5900d801d14f4fcfcceb798694c9048fe1d47&consumer_secret=cs_c33b95cf393ff20ac87ab76fe533b2fa3071f016';
 
-// Fetch an array of product data from the WordPress API
+
 function fetchProducts() {
   return fetch(productsEndpoint)
     .then(response => response.json())
     .catch(error => console.error(error));
 }
 
-// Fetch a single product's data from the WordPress API
+
 function fetchProduct(productId) {
     if (!productId) {
       return Promise.reject(new Error('Product id is required'));
@@ -19,7 +19,7 @@ function fetchProduct(productId) {
   }
   
 
-// Render a grid of product data as thumbnails
+
 function renderProducts(products) {
     const productsContainer = document.getElementById('products-container');
     products.forEach(product => {
@@ -35,14 +35,14 @@ function renderProducts(products) {
     });
   }
 
-// Filter Featured products and show in their own section
+
 function renderFeaturedProducts(products) {
   const featuredProducts = products.filter(product => product.featured);
   const featuredProductsContainer = document.getElementById('featured-products');
   renderProducts(featuredProducts);
 }
 
-// Render a single product's data on the Product Detail page
+
 function renderProductDetail(product) {
     const productDetailContainer = document.getElementById('product-detail');
     if (!product || !productDetailContainer) {
@@ -58,27 +58,10 @@ function renderProductDetail(product) {
     `;
   }
   
-// Handle the Product Detail page search parameter
-function handleProductDetail() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
-    if (!productId) {
-      console.error('Product id is required');
-      return;
-    }
-    
-    fetchProduct(productId)
-      .then(product => {
-        renderProductDetail(product);
-      })
-      .catch(error => console.error(error));
-  }
-  
-// Use the above functions to fetch and display the products on your site
+
 fetchProducts()
   .then(products => {
     renderProducts(products);
     renderFeaturedProducts(products);
-    handleProductDetail();
   })
   .catch(error => console.error(error));
