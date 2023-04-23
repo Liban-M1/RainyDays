@@ -1,10 +1,10 @@
 # Project Title
 
-This repository is for my first-year front-end development project at Noroff for a fictional streaming service called "Rainydays".
+This repository is for my first-year front-end development project at Noroff for a fictional clothing store called "Rainydays".
 
 ## Description
 
-HTML/CSS WEBSITE
+HTML/CSS/JS WEBSITE
 
 ### Executing program
 
