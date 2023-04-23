@@ -26,7 +26,7 @@ function renderProducts(products) {
       const productElement = document.createElement('div');
       productElement.classList.add('product-thumbnail');
       productElement.innerHTML = `
-        <a href="/product-detail?id=${product.id}">
+        <a href="productdetail.html?id=${product.id}">
           <img src="${product.images.length > 0 ? product.images[0].src : ''}" alt="${product.images.length > 0 ? product.images[0].alt : ''}">
           <h2>${product.name}</h2>
         </a>
@@ -34,6 +34,7 @@ function renderProducts(products) {
       productsContainer.appendChild(productElement);
     });
   }
+
   
 
 // Filter Featured products and show in their own section
@@ -45,29 +46,36 @@ function renderFeaturedProducts(products) {
 
 // Render a single product's data on the Product Detail page
 function renderProductDetail(product) {
-  const productDetailContainer = document.getElementById('product-detail');
-  productDetailContainer.innerHTML = `
-    <h2>${product.name}</h2>
-    <img src="${product.images.length > 0 ? product.images[0].src : ''}" alt="${product.images.length > 0 ? product.images[0].alt : ''}">
-    <p>${product.description}</p>
-    <p>Price: ${product.price}</p>
-    <p>SKU: ${product.sku}</p>
-  `;
-}
-
+    const productDetailContainer = document.getElementById('product-detail');
+    if (!product || !productDetailContainer) {
+      console.error('Product or product detail container is missing');
+      return;
+    }
+    productDetailContainer.innerHTML = `
+      <h2>${product.name}</h2>
+      <img src="${product.images.length > 0 ? product.images[0].src : ''}" alt="${product.images.length > 0 ? product.images[0].alt : ''}">
+      <p>${product.description}</p>
+      <p>Price: ${product.price}</p>
+      <p>SKU: ${product.sku}</p>
+    `;
+  }
+  
 // Handle the Product Detail page search parameter
 function handleProductDetail() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get('id');
-  if (!productId) {
-    console.error('Product id is required');
-    return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    if (!productId) {
+      console.error('Product id is required');
+      return;
+    }
+    
+    fetchProduct(productId)
+      .then(product => {
+        renderProductDetail(product);
+      })
+      .catch(error => console.error(error));
   }
-  fetchProduct(productId)
-    .then(product => renderProductDetail(product))
-    .catch(error => console.error(error));
-}
-
+  
 // Use the above functions to fetch and display the products on your site
 fetchProducts()
   .then(products => {
